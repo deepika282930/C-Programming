@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+    float l, b,perimeter;
+    printf("Enter length and breadth: ");
+    scanf("%f %f", &l, &b);
+    perimeter = 2 * (l + b);
+    printf("Perimeter = %f", perimeter);
+    return 0;
+}
