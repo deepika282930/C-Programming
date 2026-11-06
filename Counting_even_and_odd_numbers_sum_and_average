@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,num;
+    int even = 0,odd = 0,sum = 0;
+    float avg;
+    printf("How many numbers? ");
+    scanf("%d", &n);
+    for(i=1;i<=n;i++)
+    {
+        printf("Enter number: ");
+        scanf("%d", &num);
+        if(num%2 == 0)
+            even++;
+        else
+            odd++;
+        sum = sum+num;
+    }
+    avg = (float)sum / n;
+    printf("Even count = %d\n",even);
+    printf("Odd count = %d\n",odd);
+    printf("Sum = %d\n",sum);
+    printf("Average = %f",avg);
+    return 0;
+}
